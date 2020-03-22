@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer-array name="DashBoardFragmt_images">
+        <item>@drawable/img_profile</item>
+        <item>@drawable/img_student_reg</item>
+    </integer-array>
+
+    <string-array name="DashBoardFragmt_images_name">
+        <item>My Profile</item>
+        <item>Student Registration</item>
+    </string-array>
+
+
+
+    <integer-array name="AttendenceFragmt_images">
+        <item>@drawable/img_attendance</item>
+        <item>@drawable/img_special_attendance</item>
+
+
+    </integer-array>
+
+    <string-array name="AttendenceFragmt_images_name">
+        <item>Take Attendence</item>
+        <item>Special Attendence</item>
+    </string-array>
+
+
+</resources>

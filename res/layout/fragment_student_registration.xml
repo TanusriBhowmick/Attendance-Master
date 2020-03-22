@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".CommanFragments.StudentRegistrationFragment">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btnStuRegister">
+
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/new_style_container"
+                    android:textColorHint="@color/grey_40">
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/stdName"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_24sdp"
+                        android:background="#fff"
+                        android:hint="Name"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:textSize="@dimen/_13sdp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spacing_middle" />
+
+                <Spinner
+                    android:id="@+id/spnDepartment"
+                    style="@style/TextAppearance.AppCompat.Widget.TextView.SpinnerItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_36sdp"
+                    android:layout_gravity="center"
+                    android:layout_weight="2.1"
+                    android:background="@drawable/spinner_corner"
+                    android:entries="@array/department_type"
+                    android:paddingLeft="@dimen/_20sdp"
+                    android:text="Department"
+                    android:textColor="@color/grey_40"
+                    android:textSize="@dimen/_13sdp" />
+                <LinearLayout
+                    android:id="@+id/llShift"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spacing_middle" />
+
+                <Spinner
+                    android:id="@+id/spnShift"
+                    style="@style/TextAppearance.AppCompat.Widget.TextView.SpinnerItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_36sdp"
+                    android:layout_gravity="center"
+                    android:layout_weight="2.1"
+                    android:background="@drawable/spinner_corner"
+                    android:entries="@array/Shift"
+                    android:paddingLeft="@dimen/_20sdp"
+                    android:text="Shift"
+                    android:visibility="visible"
+                    android:textColor="@color/grey_40"
+                    android:textSize="@dimen/_15sdp" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spacing_middle" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/new_style_container"
+                    android:textColorHint="@color/grey_40">
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/stdEnrollNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_24sdp"
+                        android:background="#fff"
+                        android:hint="Enrollment No "
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:textSize="@dimen/_13sdp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <View
+                    android:layout_width="@dimen/spacing_middle"
+                    android:layout_height="@dimen/spacing_middle" />
+
+                <Spinner
+                    android:id="@+id/spn_sem"
+                    style="@style/TextAppearance.AppCompat.Widget.TextView.SpinnerItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="center"
+                    android:layout_weight="2.1"
+                    android:background="@drawable/spinner_corner"
+                    android:paddingLeft="@dimen/_24sdp"
+                    android:text="Semester"
+                    android:entries="@array/sem"
+                    android:textColor="@color/grey_40"
+                    android:textSize="@dimen/_15sdp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spacing_middle" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/new_style_container"
+                    android:textColorHint="@color/grey_40">
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/stdEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_24sdp"
+                        android:background="#fff"
+                        android:hint="Email"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:textSize="@dimen/_13sdp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spacing_middle" />
+
+                <Spinner
+                    android:id="@+id/spnBatch"
+                    style="@style/TextAppearance.AppCompat.Widget.TextView.SpinnerItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_36sdp"
+                    android:layout_gravity="center"
+                    android:layout_weight="2.1"
+                    android:background="@drawable/spinner_corner"
+                    android:entries="@array/Batch"
+                    android:paddingLeft="@dimen/_20sdp"
+                    android:text="Batch"
+                    android:textColor="@color/grey_40"
+                    android:textSize="@dimen/_13sdp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spacing_middle" />
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/new_style_container"
+                    android:textColorHint="@color/grey_40">
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/stdMb"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_24sdp"
+                        android:background="#fff"
+                        android:hint="Mobile number"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:textSize="@dimen/_13sdp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spacing_middle" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="3"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lblMessage"
+                        style="@style/message"
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/message"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text=""
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btnstopCap"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_27sdp"
+                        android:background="@color/red_800"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_gravity="right"
+                        android:textColor="#fff"
+                        android:text="Stop Cap"/>
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/cbFastDetection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="Fast Finger Detection"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:visibility="gone"
+                    android:textStyle="italic" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spacing_middle" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginRight="@dimen/_2sdp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginRight="@dimen/_13sdp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_17sdp"
+                            android:text="Finger 1A"
+                            android:textSize="@dimen/_14sdp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/imgFinger1"
+                            android:layout_width="100dp"
+                            android:layout_height="120dp"
+                            android:background="@drawable/imagefinger"
+                            android:contentDescription="@string/app_name"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/finger" />
+
+                        <Button
+                            android:id="@+id/btnFinger1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_24sdp"
+                            android:layout_gravity="center"
+                            android:textColor="#fff"
+                            android:background="@drawable/btn_finger_ripple"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:text="capture 1" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginRight="@dimen/_13sdp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_17sdp"
+                            android:text="Finger 1B"
+                            android:textSize="@dimen/_14sdp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/imgFinger2"
+                            android:layout_width="100dp"
+                            android:layout_height="120dp"
+                            android:background="@drawable/imagefinger"
+                            android:contentDescription="@string/app_name"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/finger" />
+
+                        <Button
+                            android:id="@+id/btnFinger2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_24sdp"
+                            android:layout_gravity="center"
+                            android:textColor="#fff"
+                            android:background="@drawable/btn_finger_ripple"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:text="capture 2" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_17sdp"
+                            android:text="Finger 1C"
+                            android:textSize="@dimen/_14sdp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/imgFinger3"
+                            android:layout_width="100dp"
+                            android:layout_height="120dp"
+                            android:background="@drawable/imagefinger"
+                            android:contentDescription="@string/app_name"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/finger" />
+
+                        <Button
+                            android:id="@+id/btnFinger3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_24sdp"
+                            android:layout_gravity="center"
+                            android:textColor="#fff"
+                            android:background="@drawable/btn_finger_ripple"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:text="capture 3" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spacing_middle" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginRight="@dimen/_2sdp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginRight="@dimen/_13sdp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_17sdp"
+                            android:text="Finger 2A"
+                            android:textSize="@dimen/_14sdp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/imgFinger4"
+                            android:layout_width="100dp"
+                            android:layout_height="120dp"
+                            android:background="@drawable/imagefinger"
+                            android:contentDescription="@string/app_name"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/finger" />
+
+                        <Button
+                            android:id="@+id/btnFinger4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_24sdp"
+                            android:layout_gravity="center"
+                            android:textColor="#fff"
+                            android:background="@drawable/btn_finger_ripple"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:text="capture 4" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginRight="@dimen/_13sdp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_17sdp"
+                            android:text="Finger 2B"
+                            android:textSize="@dimen/_14sdp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/imgFinger5"
+                            android:layout_width="100dp"
+                            android:layout_height="120dp"
+                            android:background="@drawable/imagefinger"
+                            android:contentDescription="@string/app_name"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/finger" />
+
+                        <Button
+                            android:id="@+id/btnFinger5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_24sdp"
+                            android:layout_gravity="center"
+                            android:textColor="#fff"
+                            android:background="@drawable/btn_finger_ripple"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:text="capture 5" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_17sdp"
+                            android:text="Finger 2C"
+                            android:textSize="@dimen/_14sdp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/imgFinger6"
+                            android:layout_width="100dp"
+                            android:layout_height="120dp"
+                            android:background="@drawable/imagefinger"
+                            android:contentDescription="@string/app_name"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/finger" />
+
+                        <Button
+                            android:id="@+id/btnFinger6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_24sdp"
+                            android:layout_gravity="center"
+                            android:textColor="#fff"
+                            android:background="@drawable/btn_finger_ripple"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:text="capture 6" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+
+        <Button
+            android:id="@+id/btnStuRegister"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_53sdp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/ripple_effect"
+            android:text="Register"
+            android:textColor="@color/red_A400"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

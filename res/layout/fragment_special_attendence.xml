@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CommanFragments.SpecialAttendenceFragment">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient_background">
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/btnSplAttendence"
+                >
+
+                <LinearLayout
+                    android:id="@+id/ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Txtdate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Date"
+                        android:layout_gravity="right"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:textColor="#000"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_25sdp"
+                        android:layout_marginBottom="@dimen/_3sdp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Type :"
+                            android:layout_gravity="center"
+                            android:textSize="@dimen/_15sdp"
+                            android:textColor="@color/blue_900"
+                            android:textStyle="bold"/>
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/radio_theory"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Theory"
+                                android:paddingLeft="@dimen/_7sdp"
+                                android:textSize="@dimen/_14sdp"/>
+
+                            <RadioButton
+                                android:id="@+id/radio_practical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Practicals"
+                                android:layout_marginLeft="@dimen/_25sdp"
+                                android:paddingLeft="@dimen/_7sdp"
+                                android:textSize="@dimen/_14sdp"/>
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/new_style_container"
+                        android:textColorHint="@color/grey_40">
+
+                        <android.support.v7.widget.AppCompatEditText
+                            android:id="@+id/etAdminEmployeeID"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_24sdp"
+                            android:background="#fff"
+                            android:hint="Employee Id"
+                            android:paddingLeft="@dimen/_20sdp"
+                            android:textColor="#000"
+                            android:textSize="@dimen/_13sdp" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/spacing_middle" />
+
+                    <Spinner
+                        android:id="@+id/spnDepartment"
+                        android:layout_width="match_parent"
+                        style="@style/TextAppearance.AppCompat.Widget.TextView.SpinnerItem"
+                        android:layout_height="@dimen/_36sdp"
+                        android:layout_weight="2.1"
+                        android:text="Department"
+                        android:background="@drawable/spinner_corner"
+                        android:layout_gravity="center"
+                        android:entries="@array/department_type"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:textSize="@dimen/_15sdp"
+                        android:textColor="@color/grey_40" />
+
+                    <LinearLayout
+                        android:id="@+id/llShift"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/spacing_middle" />
+
+                        <Spinner
+                            android:id="@+id/spnShift"
+                            style="@style/TextAppearance.AppCompat.Widget.TextView.SpinnerItem"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_36sdp"
+                            android:layout_gravity="center"
+                            android:layout_weight="2.1"
+                            android:background="@drawable/spinner_corner"
+                            android:entries="@array/Shift"
+                            android:paddingLeft="@dimen/_20sdp"
+                            android:text="Shift"
+                            android:textColor="@color/grey_40"
+                            android:textSize="@dimen/_15sdp"
+                            android:visibility="visible" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/spacing_middle" />
+
+                    <Spinner
+                        android:id="@+id/spnCourseName"
+                        android:layout_width="match_parent"
+                        style="@style/TextAppearance.AppCompat.Widget.TextView.SpinnerItem"
+                        android:layout_height="@dimen/_36sdp"
+                        android:layout_weight="2.1"
+                        android:text="Course Name"
+                        android:background="@drawable/spinner_corner"
+                        android:layout_gravity="center"
+                        android:entries="@array/CourseName"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:textSize="@dimen/_15sdp"
+                        android:textColor="@color/grey_40" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/spacing_middle" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/TxtLayoutCourseId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        android:background="@drawable/new_style_container"
+                        android:textColorHint="@color/grey_40">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/TxtCourseId"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_30sdp"
+                            android:background="#fff"
+                            android:textColor="#000"
+                            android:gravity="left|center"
+                            android:hint="Course Id"
+                            android:paddingLeft="@dimen/_20sdp"
+                            android:textSize="@dimen/_12sdp" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/spacing_middle" />
+
+                    <Spinner
+                        android:id="@+id/spn_sem"
+                        android:layout_width="match_parent"
+                        style="@style/TextAppearance.AppCompat.Widget.TextView.SpinnerItem"
+                        android:layout_height="@dimen/_36sdp"
+                        android:layout_weight="2.1"
+                        android:text="Semester"
+                        android:background="@drawable/spinner_corner"
+                        android:gravity="center|left"
+                        android:entries="@array/sem"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:textSize="@dimen/_13sdp"
+                        android:textColor="@color/grey_40" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/spacing_middle" />
+
+                    <Spinner
+                        android:id="@+id/spn_Batch"
+                        android:layout_width="match_parent"
+                        style="@style/TextAppearance.AppCompat.Widget.TextView.SpinnerItem"
+                        android:layout_height="@dimen/_36sdp"
+                        android:layout_weight="2.1"
+                        android:text="Batch"
+                        android:visibility="gone"
+                        android:background="@drawable/spinner_corner"
+                        android:gravity="center|left"
+                        android:entries="@array/Batch"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:textSize="@dimen/_13sdp"
+                        android:textColor="@color/grey_40" />
+
+                    <View
+                        android:id="@+id/view"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/spacing_middle" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_20sdp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textSize="@dimen/_15sdp"
+                            android:textStyle="bold"
+                            android:text="Time: "/>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="@dimen/_110sdp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/new_style_container"
+                            android:textColorHint="@color/grey_40">
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/TxtAdminTimeFrom"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_31sdp"
+                                android:background="#fff"
+                                android:hint="From"
+                                android:gravity="center|left"
+                                android:paddingLeft="@dimen/_20sdp"
+                                android:textSize="@dimen/_13sdp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <View
+                            android:layout_width="@dimen/spacing_middle"
+                            android:layout_height="@dimen/spacing_middle" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="@dimen/_110sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:background="@drawable/new_style_container"
+                            android:textColorHint="@color/grey_40">
+
+                            <android.support.v7.widget.AppCompatTextView
+                                android:id="@+id/TxtAdminTimeTo"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_31sdp"
+                                android:background="#fff"
+                                android:hint="To"
+                                android:gravity="center|left"
+                                android:paddingLeft="@dimen/_20sdp"
+                                android:textSize="@dimen/_13sdp" />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
+
+            <Button
+                android:id="@+id/btnSplAttendence"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/ripple_effect"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"
+                android:textColor="@color/red_A400"
+                android:text="Special Attendence" />
+        </RelativeLayout>
+</FrameLayout>

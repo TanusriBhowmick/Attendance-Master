@@ -1,0 +1,118 @@
+<resources>
+    <string name="app_name">Attendence</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="record_type_prompt">Select Record Type</string>
+    <string name="semester_type_prompt">Select Record Type</string>
+    <string name="section_type_prompt">Select Record Type</string>
+    <string name="subject_type_prompt">Select Record Type</string>
+    <string name="copy_right" translatable="false">Copyrights © %1$d</string>
+
+    <string-array name="MFS100Ver">
+        <item>41</item>
+        <item>31</item>
+    </string-array>
+
+    <string name="title_activity_preference">Preference</string>
+
+    <string-array name="record_type">
+        <item>--View Record By--</item>
+        <item>Course wise</item>
+        <!--<item>Month wise</item>-->
+        <!--<item>Section wise</item>-->
+        <item>Semester wise</item>
+        <item>Student wise</item>
+    </string-array>
+
+    <string-array name="CourseName">
+        <item>Course Name</item>
+        <item>Advanced Java</item>
+        <item>Web Programming</item>
+        <item>System Analysis and Design</item>
+        <item>Linux Administration</item>
+        <item>E-Commerce</item>
+        <item>Finishing School</item>
+        <item>Industrial Project</item>
+        <item>RDMS</item>
+        <item>Data Structure</item>
+        <item>Microprocessor </item>
+    </string-array>
+
+    <string-array name="sem">
+        <item>Semester</item>
+        <item>Semester 1</item>
+        <item>Semester 2</item>
+        <item>Semester 3</item>
+        <item>Semester 4</item>
+        <item>Semester 5</item>
+        <item>Semester 6</item>
+    </string-array>
+
+
+    <string-array name="Batch">
+        <item>Batch</item>
+        <item>Batch A</item>
+        <item>Batch B</item>
+        <item>Batch C</item>
+    </string-array>
+
+
+    <string-array name="department_type">
+        <item>Department</item>
+        <item>Civil Engineering</item>
+        <item>Mechanical Engineering</item>
+        <item>ETC Engineering</item>
+        <item>Computer Engineering</item>
+        <item>Electrical Engineering</item>
+        <item>Information Technology</item>
+        <item>Packaging Technology</item>
+        <item>Metallurgical Engineering</item>
+        <item>Textile Engineering</item>
+        <item>Mining and Mine Surveying</item>
+        <item>Automobile Engineering</item>
+        <item>Travel and Tourisum</item>
+    </string-array>
+
+    <string-array name="Course_id">
+        <item>Course Id</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+
+    </string-array>
+
+    <string-array name="Shift">
+        <item>Shift</item>
+        <item>Shift 1</item>
+        <item>Shift 2</item>
+    </string-array>
+
+    <string-array name="section_type">
+        <item>--Select Section--</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+    </string-array>
+
+    <string-array name="subject_type">
+        <item>--Select Subject--</item>
+        <item>Physics</item>
+        <item>Chemistry</item>
+        <item>Maths</item>
+        <item>Science</item>
+        <item>History</item>
+        <item>Geography</item>
+    </string-array>
+</resources>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CommanFragments.ViewRecordFragment">
+
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_background"
+        android:clipToPadding="false"
+        android:padding="@dimen/spacing_large"
+        android:scrollbars="none"
+        android:scrollingCache="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/recordLt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.7"
+                android:textColorHint="@color/grey_40"
+                android:background="@drawable/new_style_container">
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/recordTypeSpn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/record_type"
+                    android:prompt="@string/record_type_prompt" />
+
+            </android.support.design.widget.TextInputLayout>
+
+                <ImageView
+                    android:id="@+id/imgShare"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_23sdp"
+                    android:layout_weight="0.7"
+                    android:layout_gravity="center"
+                    android:tint="@color/blue_grey_900"
+                    android:visibility="visible"
+                    android:src="@drawable/share_icon"/>
+
+                <ImageView
+                    android:id="@+id/imgViewAll"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_23sdp"
+                    android:layout_weight=".7"
+                    android:layout_gravity="center"
+                    android:visibility="visible"
+                    android:background="@color/transparent"
+                    android:src="@drawable/download"/>
+
+
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/semLt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:textColorHint="@color/grey_40"
+                android:background="@drawable/new_style_container"
+                android:visibility="gone">
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/semesterTypeSpn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/sem"
+                    android:prompt="@string/semester_type_prompt"
+                    android:visibility="gone"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/secLt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:textColorHint="@color/grey_40"
+                android:background="@drawable/new_style_container"
+                android:visibility="gone">
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/sectionTypeSpn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/section_type"
+                    android:prompt="@string/section_type_prompt"
+                    android:visibility="gone"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/subLt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:textColorHint="@color/grey_40"
+                android:background="@drawable/new_style_container"
+                android:visibility="gone">
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/subjectTypeSpn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/CourseName"
+                    android:prompt="@string/subject_type_prompt"
+                    android:visibility="gone"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/stdLt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:textColorHint="@color/grey_40"
+                android:background="@drawable/new_style_container"
+                android:visibility="gone">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/studentTypeEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Enrollment No."
+                    android:visibility="gone"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_20sdp" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableLayout
+                    android:id="@+id/mytable"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/table_background"
+                    android:padding="@dimen/_10sdp"
+                    android:visibility="gone">
+
+
+                </TableLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</FrameLayout>
